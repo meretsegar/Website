@@ -1,0 +1,48 @@
+<style>
+/* Base CSS: assign to certain Tag & Class */
+    .youtube_subscribe {                    /* .assign to certain class */
+        background-color: red;
+        color: white;
+        border: none;
+        height: 36px;
+        width: 105px;
+        border-radius: 4px;                 /* the roundness of corners */
+        cursor: pointer;                    /* what point look like when hovering on it */    
+        transition: background-color 1s;    /* take 2 param (attr, time) */
+    }
+    .twitter_tweet {
+        background-color: rgb(35, 130, 233);
+        color: white;
+        border: none;
+        height: 36px;
+        width: 75px;
+        border-radius: 18px;
+        cursor: pointer;  
+    }
+
+/* pseudo CSS: only work under certain situation */
+    .youtube_subscribe:hover {          
+        background-color: black;
+        box-shadow: black 2px;
+    }
+    .twitter_tweet:hover {
+        background-color: black;
+        box-shadow: black 2px;
+        box-shadow: 3px 5px 3px gray;   /* take 4 param (horizontal, vertical, blur, color) */
+    }
+    .twitter_tweet:active {
+        background-color: black;
+        color:gray;
+        cursor:grabbing;
+        opacity: 0.5;
+    }
+    .youtube_subscribe:active {
+        background-color: black;
+        color:gray;
+        cursor:grabbing;
+        opacity: 0.5;
+    }
+</style>
+
+<button class="youtube_subscribe">Subscribe</button>
+<button class="twitter_tweet">Tweet</button>
