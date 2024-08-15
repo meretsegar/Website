@@ -1,0 +1,6 @@
+<body>
+    <p></p>
+    <script>
+        document.addEventListener('mousemove', function (event) {document.querySelector('p').innerText = `${event.clientX}:${event.clientY}`})
+    </script>
+</body>
